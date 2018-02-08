@@ -1,6 +1,3 @@
-//TODO
-// 2) Fix bug on line 66 (https://gist.github.com/simonblakemore/1e916a5e73dea1bb172f33a973fc4f43)
-
 const menu = {
     _courses: {
         _appetizers: [],
@@ -53,7 +50,7 @@ const menu = {
     },
 
     getRandomDishFromCourse(courseName) {
-        const dishes = this._courses[courseName]; // check if this line contains a bug
+        const dishes = this._courses[courseName]; 
         const randomVar = Math.floor(Math.random() * dishes.length);
         return dishes[randomVar];
     },
